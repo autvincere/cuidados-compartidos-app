@@ -8,11 +8,11 @@ import { ICareTime } from "../types";
 const CareTime = ({ setAgreedTime }: ICareTime): ReactElement => {
     return (
         <>
-            <h1 className={styles.align_title__image}>
+            <h1 className={styles.caretime__title}>
                 ¿Como deseas dividir las visitas?
             </h1>
             <img
-                className={styles.central_image}
+                className={styles.caretime__central_image}
                 src={FamilyIntro}
                 alt="familia_intro"
             />
@@ -21,21 +21,21 @@ const CareTime = ({ setAgreedTime }: ICareTime): ReactElement => {
                 Escoge la modalidad que mas les acomode teniendo siempre en
                 cuenta el bienestar del niño.
             </p>
-            <div className={styles.container_buttons}>
+            <div className={styles.caretime__container_buttons}>
                 <button
-                    className={styles.button}
+                    className={styles.caretime__button}
                     onClick={() => setAgreedTime("1 week")}
                 >
                     1 Semana
                 </button>
                 <button
-                    className={styles.button}
+                    className={styles.caretime__button}
                     onClick={() => setAgreedTime("middle month")}
                 >
                     Mitad de mes
                 </button>
                 <button
-                    className={styles.button}
+                    className={styles.caretime__button}
                     onClick={() => setAgreedTime("month")}
                 >
                     Mes Completo
