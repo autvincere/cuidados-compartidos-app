@@ -3,49 +3,49 @@
 } */
 
 .calendar {
-  width: var(--calendar-width);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+    width: var(--calendar-width);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .month {
-  width: calc(33.33% - 16px);
-  border: 1px solid #ddd;
-  padding: 8px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
+    width: calc(33.33% - 16px);
+    border: 1px solid #ddd;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
 }
 .month_title {
-  text-align: center;
+    text-align: center;
 }
 .days {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
 .day {
-  width: calc(14.28% - 4px); /* 7 días por fila con una brecha de 4px */
-  text-align: center;
-  padding: 4px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  padding: 5px;
+    width: calc(14.28% - 4px); /* 7 días por fila con una brecha de 4px */
+    text-align: center;
+    padding: 4px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .daysOfWeek {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .day_father {
-  background-color: blue;
-  cursor: pointer;
+    background-color: blue;
+    cursor: pointer;
 }
 .day_mother {
-  background-color: pink;
-  cursor: pointer;
+    background-color: pink;
+    cursor: pointer;
 }

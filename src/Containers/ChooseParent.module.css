@@ -1,13 +1,13 @@
 .central_image {
-  width: 60vw;
+    width: 60vw;
 }
 .align_title__image {
-  position: absolute;
+    position: absolute;
 }
 .container_buttons {
-  display: flex;
-  width: 40vw;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
