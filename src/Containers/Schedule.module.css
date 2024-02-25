@@ -1,0 +1,20 @@
+.schedule__wrapper {
+    display: flex;
+    /* width: 100vw; */
+    gap: 16px;
+}
+.schedule__aside {
+    display: flex;
+    flex-direction: column;
+}
+.schedule__button {
+    padding: 4px 16px;
+    max-width: 150px;
+    width: 120px;
+}
+@media screen and (width <= 640px) {
+    .schedule__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

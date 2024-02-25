@@ -1,13 +1,32 @@
-.central_image {
+.caretime__title {
+    position: absolute;
+    text-align: center;
+}
+
+.caretime__central_image {
     width: 60vw;
 }
 .align_title__image {
     position: absolute;
 }
-.container_buttons {
+.caretime__container_buttons {
     display: flex;
-    width: 40vw;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 24px;
+}
+.caretime__button {
+    padding: 4px 16px;
+    max-width: 150px;
+    width: 128px;
+}
+@media screen and (width <= 640px) {
+    .caretime__title {
+        position: relative;
+    }
+    .caretime__central_image {
+        width: 100%;
+    }
+    .caretime__container_buttons {
+        flex-direction: column;
+    }
 }

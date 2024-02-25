@@ -3,10 +3,12 @@ export type AgreedTime = "" | "1 week" | "middle month" | "month";
 export type StartsWith = "father" | "mother" | "";
 
 export interface ICareTime {
+    // eslint-disable-next-line no-unused-vars
     setAgreedTime: (agreedTime: AgreedTime) => void; // Debe coincidir con la definición en App.tsx
 }
 
 export interface IChooseParent {
+    // eslint-disable-next-line no-unused-vars
     setStartsWith: (startsWith: StartsWith) => void; // Debe coincidir con la definición en App.tsx
 }
 

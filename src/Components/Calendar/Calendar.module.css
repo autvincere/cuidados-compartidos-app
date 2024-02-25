@@ -3,10 +3,11 @@
 } */
 
 .calendar {
-    width: var(--calendar-width);
+    /* width: var(--calendar-width); */
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
 }
 
 .month {

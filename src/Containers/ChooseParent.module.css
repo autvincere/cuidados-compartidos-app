@@ -1,13 +1,28 @@
+.choose_parent__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100vw;
+}
+
 .central_image {
     width: 60vw;
 }
 .align_title__image {
-    position: absolute;
+    /* position: absolute; */
 }
-.container_buttons {
+.choose_parent__container_buttons {
     display: flex;
-    width: 40vw;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 16px;
+}
+
+.choose_parent__button {
+    padding: 4px 16px;
+    max-width: 150px;
+    width: 120px;
 }
