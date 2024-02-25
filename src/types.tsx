@@ -3,11 +3,11 @@ export type AgreedTime = "" | "1 week" | "middle month" | "month";
 export type StartsWith = "father" | "mother" | "";
 
 export interface ICareTime {
-    setAgreedTime: () => void; // Debe coincidir con la definición en App.tsx
+    setAgreedTime: (agreedTime: AgreedTime) => void; // Debe coincidir con la definición en App.tsx
 }
 
 export interface IChooseParent {
-    setStartsWith: () => void; // Debe coincidir con la definición en App.tsx
+    setStartsWith: (startsWith: StartsWith) => void; // Debe coincidir con la definición en App.tsx
 }
 
 export interface IDatesCalendar {
