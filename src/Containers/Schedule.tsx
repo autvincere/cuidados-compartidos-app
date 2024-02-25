@@ -34,7 +34,7 @@ const Schedule = ({
         };
 
         html2canvas(container, options).then(canvas => {
-            const imgURL = canvas.toDataURL("image/jpeg", 0.7); // 0.7 es el 70% de calidad
+            const imgURL = canvas.toDataURL("image/jpeg", 1); // 0.7 es el 70% de calidad
 
             const link = document.createElement("a");
             link.href = imgURL;
