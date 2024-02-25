@@ -1,5 +1,5 @@
 import styles from "./Calendar.module.css";
-import { ICalendar } from "../../types";
+import { ICalendar, IDatesCalendar } from "../../types";
 // import { useEffect } from "react";
 
 const MONTHS = [
@@ -18,11 +18,6 @@ const MONTHS = [
 ];
 const DAYWEEK = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
 
-interface IDateObject {
-    date: Date;
-    // otras propiedades aquí...
-}
-
 const Calendar = ({
     datesToCalendar,
     updateVisitStatus,
@@ -31,8 +26,8 @@ const Calendar = ({
     // Agrupar las fechas por mes
     const groupedByMonth = datesToCalendar.reduce(
         (
-            accumulator: { [key: number]: IDateObject[] },
-            currentValue: IDateObject,
+            accumulator: { [key: number]: IDatesCalendar[] },
+            currentValue: IDatesCalendar,
         ) => {
             const month = currentValue.date.getMonth();
             accumulator[month] = accumulator[month] || [];
